@@ -27,6 +27,7 @@
 /// THE SOFTWARE.
 
 import Foundation
+import Realm
 import RealmSwift
 import CoreLocation
 
