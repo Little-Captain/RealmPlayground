@@ -32,10 +32,65 @@ import RealmSwift
 import CoreLocation
 
 // Setup
-let realm = try! Realm(configuration:
-  Realm.Configuration(inMemoryIdentifier: "TemporaryRealm"))
+let realm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: "TemporaryRealm"))
 
 print("Ready to play...")
 
 // Playground
+
+/// Object basics
+class Car: Object {
+    
+    @objc dynamic var brand = ""
+    @objc dynamic var year = 0
+    
+    convenience init(brand: String, year: Int) {
+        self.init()
+        self.brand = brand
+        self.year = year
+    }
+    
+    override var description: String {
+        return "🚗 {\(brand), \(year)}"
+    }
+    
+    deinit { print("\(type(of: self).description()) 被释放") }
+    
+}
+
+Example.of("Basic Model") {
+    let car1 = Car(brand: "BMW", year: 1980)
+    print(car1)
+}
+
+/// Storage data types
+class Person: Object {
+    
+    // Object-type properties
+    // String
+    @objc dynamic var firstName = ""
+    @objc dynamic var lastName: String?
+    
+    // Date
+    @objc dynamic var born = Date.distantPast
+    @objc dynamic var deceased: Date?
+    
+    // Data (应尽量避开存储 Data)
+    @objc dynamic var photo: Data?
+    
+    // Primitive-type properties
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
