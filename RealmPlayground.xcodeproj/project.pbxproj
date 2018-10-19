@@ -19,6 +19,8 @@
 		2069D3F27B253A6813107661 /* Pods-RealmPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPlayground/Pods-RealmPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		519777346592FBBAB37CFCF4 /* Pods_RealmPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AA0EB2537FE2E3081835BA /* Pods-RealmPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmPlayground/Pods-RealmPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		B9B83C2C2179A2BD00B1DB06 /* C04.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = C04.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		B9B83C2D2179A2BD00B1DB06 /* C03.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = C03.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B9CA2DB6217825900025A3C5 /* RealmPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9CA2DB9217825900025A3C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9CA2DBB217825900025A3C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +28,6 @@
 		B9CA2DC0217825920025A3C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9CA2DC3217825920025A3C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9CA2DC5217825920025A3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9CA2DCC217826210025A3C5 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +59,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B9B83C2B2179A2BD00B1DB06 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				B9B83C2D2179A2BD00B1DB06 /* C03.playground */,
+				B9B83C2C2179A2BD00B1DB06 /* C04.playground */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
 		B9CA2DAD217825900025A3C5 = {
 			isa = PBXGroup;
 			children = (
-				B9CA2DCB2178260F0025A3C5 /* Playground */,
+				B9B83C2B2179A2BD00B1DB06 /* Playground */,
 				B9CA2DB8217825900025A3C5 /* RealmPlayground */,
 				B9CA2DB7217825900025A3C5 /* Products */,
 				7348FB522D963C3D1B488442 /* Pods */,
@@ -88,14 +98,6 @@
 				B9CA2DC5217825920025A3C5 /* Info.plist */,
 			);
 			path = RealmPlayground;
-			sourceTree = "<group>";
-		};
-		B9CA2DCB2178260F0025A3C5 /* Playground */ = {
-			isa = PBXGroup;
-			children = (
-				B9CA2DCC217826210025A3C5 /* Playground.playground */,
-			);
-			path = Playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
