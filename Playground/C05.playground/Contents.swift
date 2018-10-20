@@ -96,6 +96,10 @@ Example.of("Filering") {
     
     let living = realm.objects(Person.self).filter("deceased = nil")
     print("Living People:\(living.count)")
+    
+    let predicate = NSPredicate(format: "hairCount < %d AND deceased = nil", 1000)
+    let balding = realm.objects(Person.self).filter(predicate)
+    print("Likely balding living people: \(balding.count)")
 }
 
 
